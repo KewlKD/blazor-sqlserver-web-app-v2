@@ -2,13 +2,14 @@
 @using BlazorSQLServerWebApp.Shared.Models
 
 @inject HttpClient Http
-<h1>User Data</h1>
-<p>Blazor CRUD operation</p>
+<h1>Guestbook</h1>
+<p>List of Guestbook signees</p>
+
 <div class="row">
     <div class="col-md-6">
         <a href='/user/add' class="btn btn-primary" role="button">
             <i class="fas fa-user-plus"></i>
-            Add User
+            Go to Guestbook
         </a>
     </div>
     <div class="input-group col">
@@ -49,12 +50,7 @@ else
                     <td>@user.Country</td>
                     
                     <td>
-                        <a href='/user/edit/@user.Id' class="btn btn-outline-dark" role="button">
-                            Edit
-                        </a>
-                        <a href='/user/delete/@user.Id' class="btn btn-outline-danger" role="button">
-                            Delete
-                        </a>
+                        
                         
                     </td>
                 </tr>

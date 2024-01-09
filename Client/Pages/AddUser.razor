@@ -6,7 +6,9 @@
 
 
 
-<h1>@Title User</h1>
+<h1>@Title Guestbook</h1>
+<p>Please complete the following fields</p>
+
 <hr />
 <EditForm Model="@user" OnValidSubmit="SaveUser">
     <DataAnnotationsValidator />
@@ -27,14 +29,14 @@
     </div>
 
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary">Sign Guestbook</button>
         <button class="btn btn-light" @onclick="Cancel">Cancel</button>
     </div>
 </EditForm>
 @code {
     [Parameter]
     public int userId { get; set; }
-    protected string Title = "Add";
+    protected string Title = "Sign";
     protected User user = new();
     protected override async Task OnParametersSetAsync()
     {
