@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Kyle Brian Dudley": {
+    "BlazorSQLServerWebApp": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
