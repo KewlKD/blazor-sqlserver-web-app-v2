@@ -10,7 +10,6 @@
 <p>Please complete the following fields</p>
 
 
-
 <hr />
 <EditForm Model="@user" OnValidSubmit="SaveUser">
     <DataAnnotationsValidator />
@@ -21,7 +20,6 @@
         </div>
         <ValidationMessage For="@(() => user.Name)" />
     </div>
-
     <div class="mb-3">
         <label for="Country" class="form-label">Country</label>
         <div class="col-md-4">
@@ -44,7 +42,6 @@
     {
         if (userId != 0)
         {
-            Title = "Edit";
             user = await Http.GetFromJsonAsync<User>("api/User/" + userId);
         }
     }

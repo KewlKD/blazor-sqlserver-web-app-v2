@@ -17,11 +17,8 @@
     .table-success tbody {
         background-color: white;
     }
-
     
 </style>
-
-
 
 <h1 style="color:white;">Welcome To My Guestbook</h1>
 <div class="row">
@@ -38,7 +35,6 @@
                 </button>
             </div>
         }
-
     </div>
 </div>
 
@@ -55,7 +51,6 @@ else
                 <th>Id</th>
                 <th>Name</th>
                 <th>Country</th>
-                
             </tr>
         </thead>
         <tbody>
@@ -65,10 +60,7 @@ else
                     <td>@user.Id</td>
                     <td>@user.Name</td>
                     <td>@user.Country</td>
-                    
                     <td>
-                        
-                        
                     </td>
                 </tr>
             }
@@ -108,10 +100,6 @@ else
         {
             userList = searchUserData;
         }
-    }
-    protected void DeleteConfirm(int userID)
-    {
-        user = userList.FirstOrDefault(x => x.Id == userID);
     }
     public void ResetSearch()
     {

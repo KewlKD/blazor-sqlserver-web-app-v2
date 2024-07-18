@@ -70,25 +70,6 @@ namespace BlazorSQLServerWebApp.Server.Services
                 throw;
             }
         }
-        public void DeleteUser(int id)
-        {
-            try
-            {
-                User? user = _dbContext.Users.Find(id);
-                if (user != null)
-                {
-                    _dbContext.Users.Remove(user);
-                    _dbContext.SaveChanges();
-                }
-                else
-                {
-                    throw new ArgumentNullException();
-                }
-            }
-            catch
-            {
-                throw;
-            }
-        }
+        
     }
 }

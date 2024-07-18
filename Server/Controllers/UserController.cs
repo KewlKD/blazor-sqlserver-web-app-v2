@@ -41,11 +41,6 @@ namespace BlazorSQLServerWebApp.Server.Controllers
             _IUser.UpdateUserDetails(user);
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
-        {
-            _IUser.DeleteUser(id);
-            return Ok();
-        }
+       
     }
 }
